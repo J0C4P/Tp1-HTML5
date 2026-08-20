@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Deportes Unca - inscripción</title>
+</head>
+<body>
+    <h1>Inscripción</h1>
+    <form action="pagina3.html" method="post">
+    
+    <fieldset>
+        <legend>Información de la actividad</legend>
+        <label for="actividad">
+            Actividad:
+        </label>
+        <br>
+        <input type="text" id="actividad" name="actividad" value="Basket" disabled>
+        <br>
+        <label for="Lugar">
+            Lugar:
+        </label>
+        <br>
+        <input type="text" id="Lugar" name="Lugar" value="Cancha de básquet del campus universitario." disabled>
+        <br>
+        <label for="Día">
+            Día:
+        </label>
+        <br>
+        <input type="text" id="Día" name="Día" value="Lunes" disabled>
+        <br>
+        <label for="Horario">
+            Horario:
+        </label>
+        <br>
+        <input type="text" id="Horario" name="Horario" value="16:00" disabled>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Datos del participante</legend>
+        <label for="apellido-nombre">
+            Apellido y Nombre:
+        </label>
+        <br>
+        <input type="text" id="apellido-nombre" name="apellido-nombre" maxlength="100" mandatory>
+        <br>
+        <label for="DNI">
+            DNI:
+        </label>
+        <br>
+        <input type="integer" id="DNI" name="DNI" maxlength="8" mandatory>
+        <br>
+        <label for="fecha-nacimiento">
+            Fecha de nacimiento:
+        </label>
+        <br>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+        <br>
+        <label for="correo-electronico">
+            Correo electrónico:
+        </label>
+        <br>
+        <input type="email" id="correo-electronico" name="correo-electronico">
+        <br>
+        <label for="telefono">
+            Telefono:
+        </label>
+        <br>
+        <input type="text" id="telefono" name="telefono">
+        <br>
+        <label for="sexo">
+            Sexo:
+        </label>
+        <br>
+        <select id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="no-binario">No binario</option>
+        </select>
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Información deportiva</legend>
+        <label for="nivel">Nivel:</label>
+        <br>
+        <select id="nivel" name="nivel">
+            <option value="inicial">
+                Inicial
+            </option>
+            <option value="intermedio">
+                Intermedio
+            </option>
+            <option value="avanzado">
+                Avanzado
+            </option>
+        </select>
+        <br>
+        <label for="experiencia">¿Posee experiencia previa?:</label>
+        <br>
+        <input type="radio" id="experiencia" name="experiencia" value="si">Sí
+        <input type="radio" id="experiencia" name="experiencia" value="no">No
+        <br>
+        <label for="observaciones">
+            Observaciones:
+        </label>
+        <br>
+        <textarea id="observaciones" name="observaciones" rows="5" cols="25"></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Aceptación de condiciones</legend>
+        <input type="checkbox" id="condiciones" name="condiciones" mandatory>
+        <label for="condiciones">
+            Acepto las condiciones de inscripción. (Obligatorio)
+        </label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <input name="guardar" type="submit" value="Enviar">
+        <input name="cancelar" type="reset" value="Cancelar">
+    </fieldset>
+    </form>
+
+    <hr>
+    <footer>
+        <a href="pagina1.html">Ir al Inicio</a>
+        <p>Deportes Unca – 2026</p>
+    </footer>
+</body>
+</html>
