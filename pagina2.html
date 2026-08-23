@@ -41,13 +41,13 @@
             Apellido y Nombre:
         </label>
         <br>
-        <input type="text" id="apellido-nombre" name="apellido-nombre" maxlength="100" mandatory>
+        <input type="text" id="apellido-nombre" name="apellido-nombre" maxlength="100" required>
         <br>
         <label for="DNI">
             DNI:
         </label>
         <br>
-        <input type="integer" id="DNI" name="DNI" maxlength="8" mandatory>
+        <input type="text" id="DNI" name="DNI" pattern="[0-9]{7,8}" required>
         <br>
         <label for="fecha-nacimiento">
             Fecha de nacimiento:
@@ -97,8 +97,8 @@
         <br>
         <label for="experiencia">¿Posee experiencia previa?:</label>
         <br>
-        <input type="radio" id="experiencia" name="experiencia" value="si">Sí
-        <input type="radio" id="experiencia" name="experiencia" value="no">No
+        <input type="radio" id="experiencia-s" name="experiencia" value="si">Sí
+        <input type="radio" id="experiencia-n" name="experiencia" value="no">No
         <br>
         <label for="observaciones">
             Observaciones:
@@ -109,7 +109,7 @@
     <br>
     <fieldset>
         <legend>Aceptación de condiciones</legend>
-        <input type="checkbox" id="condiciones" name="condiciones" mandatory>
+        <input type="checkbox" id="condiciones" name="condiciones" required>
         <label for="condiciones">
             Acepto las condiciones de inscripción. (Obligatorio)
         </label>
